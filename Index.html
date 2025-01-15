@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="Navbar">
+    <div class="logo"><img src="./IMG/Logo.png" /></div>
+    <ul class="Nav-links" style="margin-top: 1rem; margin-bottom: 1rem;">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#features">More Options</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button type="button" class="btn btn-outline-danger login-btn">Log In</button></li>
+        <li><button type="button" class="btn btn-danger signup-btn">Sign Up</button></li>
+    </ul>
+    </nav>
+
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-btn" id="closeFormBtn">&times;</span>
+        <h2>Get Started Today!</h2>
+        <p>Fill in your details and take control of your tasks.</p>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name" required>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+          </div>
+          <div class="form-group">
+            <label>Language</label>
+            <label><input type="checkbox" name="language" value="English" > English</label>
+            <label><input type="checkbox" name="language" value="Hindi"> Hindi</label>
+            <label><input type="checkbox" name="language" value="Marathi"> Marathi</label>
+            <div id="checkboxError" style="color: red; display: none;">Please select at least one option.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label><input type="checkbox" id="terms" required> I agree to the <a href="#">terms and conditions</a></label>
+          </div>
+          
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="thankYouPopup" class="popup hidden">
+      <div class="popup-content thank-you">
+        <h2>❤️</h2>
+        <h2>Thank you for connect with us.</h2>
+        <p>Our team will contacting with you soon</p>
+        <button id="closeThankYouBtn" class="submit-btn">Done</button>
+      </div>
+    </div>
+    
+
+
+    <!-- Header Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Simplify Your Life with Our Todo App</h1>
+        <p>Stay organized and boost your productivity with our intuitive to-doapp.</p>
+        <p>Experience a modern approach to task management that fits your lifestyle.</p>
+      </div>
+      <div class="home-buttons">
+        <button id="openFormBtn" type="button" class="btn btn-danger signup-btn large-button" style="margin-right: 1rem; border-radius: 3rem;">Get Started</button>
+        <button type="button" class="btn btn-outline-danger login-btn large-button" style="border-radius: 3rem;">Learn More</button>
+      </div>
+      <div class="hero-image">
+        <div class="Img-1">
+        <img src="./IMG/Organi.png" />
+        </div>
+        <div class="Img-2">
+        <img src="./IMG/Img1.png" />
+        </div>
+      </div>
+      <div class="socials">
+        <img src="./IMG/Google.png" />
+        <img src="./IMG/Facebook.png" />
+        <img src="./IMG/Youtube.png" />
+        <img src="./IMG/Pinterest.png" />
+        <img src="./IMG/Twitch.png" />
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2>Transform Your Productivity with Our Innovative To-Do List Features</h2>
+      <div class="cards-container">
+        <div class="card">
+            <img src="./IMG/Card1.png" class="card-image"><span>01</span>
+            <p class="card-title">User-Friendly Interface</p>
+            <p class="card-info">Our platform offers seamless task management to boost your efficiency.</p>
+        </div>
+        <div class="card">
+            <img src="./IMG/Card2.png" class="card-image"><span>02</span>
+            <p class="card-title">Collaborate & Share Effortlessly</p>
+            <p class="card-info">Invite team members to work together and achieve your goals faster.</p>
+        </div>
+        <div class="card">
+            <img src="./IMG/Card3.png" class="card-image"><span>03</span>
+            <p class="card-title">Effortless Collaboration</p>
+            <p class="card-info">Invite team members to work together and achieve your goals faster.</p>
+        </div>
+        <div class="card">
+            <img src="./IMG/Card4.png" class="card-image"><span>04</span>
+            <p class="card-title">Seamless Access</p>
+            <p class="card-info">Stay connected and manage your tasks on the go with ease.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <h2>Customer Testimonials</h2>
+      <h3>This tool has transformed my productivity and organization!</h3>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <img src="./IMG/testimonials.png" />
+          <!-- <img src="./IMG/Testimonial2.png" /> -->
+          </div>
+          <!-- <div class="test-text">
+          <p>
+            "Using this website has made my tasks so much easier! I can't
+            imagine my day without it."
+          </p>
+          <span>- Sherri Cronin, Project Manager</span>
+        </div> -->
+      </div>
+    </section>
+      <div class="discover">
+        <div class="discover-img">
+        <img src="./IMG/Img2.png" />
+        </div>
+        <div class="discover-text">
+        <h1>Start Organizing Your Life Today</h1>
+        <h3>Join us now and transform your productivity with our intutive to-do list platform!</h3>
+        <button type="button" class="btn btn-danger signup-btn">Sign Up</button>
+        <button type="button" class="btn btn-outline-danger login-btn">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Data section -->
+
+      <div id="submittedDataTable" class="hidden">
+        <h3>Submitted Data</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Language</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="dataTableBody">
+          </tbody>
+        </table>
+      </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="logo">
+            <img src="./IMG/Logo.png"/>
+          </div>
+          <p>Subscribe to our newsletter for the latest features and updates delivered to you.</p>
+          <form class="email-form">
+            <input type="email" placeholder="Your email here" required />
+            <button type="submit">Join</button>
+          </form>
+          <p class="note">
+            By subscribing, you consent to our Privacy Policy and agree to receive updates.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section resources">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social-media">
+          <h4>Connect With Us</h4>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X</a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Osumare. All rights reserved.</p>
+        <ul class="footer-policy-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

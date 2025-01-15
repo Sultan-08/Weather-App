@@ -1,0 +1,510 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #eeeeee !important;
+  }
+  
+  .Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 2rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .Navbar .logo img {
+    height: 3.5rem;
+    width: 5.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Navbar .Nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: none;
+    margin-bottom: none;
+  }
+
+  .Navbar .Nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .Navbar .Nav-links a:hover {
+    color: #ff6f61;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .primary-btn {
+    background-color: #ff6f61;
+    color: #fff;
+  }
+  
+  .primary-btn:hover {
+    background-color: #ff4d3a;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    border: 1px solid #ff6f61;
+    color: #ff6f61;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #ff6f61;
+    color: #fff;
+  }
+  
+  /* Popup */
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff3838;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+    left: 22rem;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 10rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff3838;
+  }
+
+  .thank-you h2, p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popup-content button {
+    justify-content: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Navbar .Nav-links {
+      flex-direction: column;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      font-weight: bolder;
+      padding-left: 22rem;
+      padding-right: 24rem;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      padding-left: 22rem;
+      padding-right: 24rem;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .home-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2rem 2rem;
+    }
+
+    .large-button {
+      width: 150px;
+      height: 50px;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    
+    .hero-image {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .Img-1 img {
+      height: 47rem;
+      width: 52rem;
+      border-radius: 1.5rem;
+      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .Img-2 img {
+      height: 47rem;
+      width: 32rem;
+      border-radius: 2rem;
+      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      margin: 0.5rem 8rem 0.5rem 8rem;
+      justify-content: space-around;
+    }
+
+    .socials img {
+      height: 3rem;
+      width: auto;
+      margin: 0.5rem 0.5rem 2.5rem 0.5rem;
+    }
+
+/* Features Section */
+
+.features h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: #232323;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.2rem;
+  background-color: #e8e8e8 !important;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 20rem;
+}
+
+.card-image {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-info {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  left: 15rem;
+  opacity: 0.5;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-left: 16rem;
+}
+
+.testimonials h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  padding-left: 16rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonial img {
+  margin: 0.5rem 2.5rem 0.5rem 0.5rem ;
+}
+
+.testimonial-slider p {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: auto;
+  right: auto;
+}
+
+.discover {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-left: 12rem;
+    padding-right: 4rem;
+}
+
+.discover h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 3rem 0 0.5rem 1rem;
+}
+
+.discover h3 {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin: 1rem 0 1.5rem 1rem;
+  text-align: left;
+}
+
+.discover-text button {
+  margin-left: 1rem;
+}
+
+/* Data */
+
+#submittedDataTable {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+#submittedDataTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#submittedDataTable th, #submittedDataTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#submittedDataTable th {
+  background: #f4f4f4;
+}
+
+#submittedDataTable td {
+  background: #fff;
+}
+
+
+
+/* Footer Section */
+
+footer {
+  background-color: #f9f9f9;
+  padding: 2rem 8rem;
+  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer-section {
+  min-width: 10rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 3.5rem;
+  width: 5.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-form {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 0.5rem 0 0 0.5rem;
+  outline: none;
+}
+
+.email-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #e63946;
+  color: white;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 1rem;
+  color: #777;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.2rem solid #ddd;
+  padding-top: 0.6rem;
+}
+
+.footer-policy-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-policy-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-policy-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-media ul li i {
+  margin-right: 0.5rem;
+}
